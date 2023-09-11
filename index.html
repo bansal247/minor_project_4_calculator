@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="text-area">
+
+        </div>
+        <div id="buttons-area">
+            <div class="row">
+                <button onclick="getInput('7')">7</button>
+                <button onclick="getInput('8')">8</button>
+                <button onclick="getInput('9')">9</button>
+                <button id = "del"  onclick="deleteDigit()">DEL</button>
+            </div>
+            <div class="row">
+                <button onclick="getInput('4')">4</button>
+                <button onclick="getInput('5')">5</button>
+                <button onclick="getInput('6')">6</button>
+                <button onclick="getInput('+')">+</button>
+            </div>
+            <div class="row">
+                <button onclick="getInput('1')">1</button>
+                <button onclick="getInput('2')">2</button>
+                <button onclick="getInput('3')">3</button>
+                <button onclick="getInput('-')">-</button>
+            </div>
+            <div class="row">
+                <button onclick="getInput('.')">.</button>
+                <button onclick="getInput('0')">0</button>
+                <button onclick="getInput('/')">/</button>
+                <button onclick="getInput('x')">x</button>
+            </div>
+            <div class="row">
+                <button id="reset" onclick="reset()">RESET</button>
+                <button id="calculate" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
